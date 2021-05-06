@@ -10,5 +10,5 @@ function calculateTip() {
     let percent = Number(document.getElementById("tip").value) / 100
     let tip = total * percent
     document.getElementById("tip-value").textContent = tip;
-    document.getElementById("cost-display").textContent = total + tip
+    document.getElementById("cost-display").textContent = total * (1 + percent)
 }
