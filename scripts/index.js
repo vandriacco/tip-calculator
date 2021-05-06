@@ -9,6 +9,19 @@ function calculateTip() {
     let total = Number(document.getElementById("input-cost").value)
     let percent = Number(document.getElementById("tip").value) / 100
     let tip = total * percent
-    document.getElementById("tip-value").textContent = tip;
-    document.getElementById("cost-display").textContent = total * (1 + percent)
+    let bill = total + tip
+    tip = tip.toFixed(2);
+    bill = bill.toFixed(2);
+    if (isNaN(total)) {
+        alert('Please Enter a Number');
+    } else {
+        document.getElementById("tip-value").textContent = tip;
+        document.getElementById("cost-display").textContent = bill;
+    }
+}
+//sets slider to original position and clears textbox
+function resetCalculator() {
+    document.getElementById("tip").value = 20
+    updateTextInput(20)
+    document.getElementById("input-cost").value = ""
 }
