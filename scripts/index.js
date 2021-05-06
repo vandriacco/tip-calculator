@@ -1,5 +1,5 @@
-var slider = document.getElementById("tip");
-var output = document.getElementById("tip-display");
+let slider = document.getElementById("tip");
+let output = document.getElementById("tip-display");
 output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
@@ -24,8 +24,8 @@ function calculateTip() {
     if (isNaN(total)) {
         alert('Please Enter a Number');
     } else {
-        document.getElementById("tip-value").textContent = tip;
-        document.getElementById("cost-display").textContent = bill;
+        document.getElementById("tip-value").textContent = `$${tip}`;
+        document.getElementById("cost-display").textContent = `$${bill}`;
     }
 }
 //sets slider to original position and clears textbox
