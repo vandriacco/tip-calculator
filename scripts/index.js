@@ -32,7 +32,7 @@ function calculateTip() {
 function resetCalculator() {
     document.getElementById("tip").value = 20
     updateTextInput(20)
-    document.getElementById("input-cost").value = ""
+    document.getElementById("input-cost").value = "";
     document.getElementById("tip-value").textContent = "";
     document.getElementById("cost-display").textContent = "";
 }

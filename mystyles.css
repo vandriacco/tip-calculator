@@ -1,5 +1,15 @@
-* {
+
+h1{
+
+}
+body{
     text-align: center;
-    vertical-align: middle;
-    color:chartreuse;
+    background: url(images\Spiral.jpg);
+}
+#result{
+    background-color: black;
+    color: white;
+    margin: auto;
+    border-radius: 5%;
+    font-size: larger;
 }
