@@ -5,6 +5,7 @@ output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = this.value;
+  calculateTip()
 }
 function updateTextInput(value) {
     document.getElementById("tip-display").textContent = value
@@ -24,8 +25,8 @@ function calculateTip() {
     if (isNaN(total)) {
         alert('Please Enter a Number');
     } else {
-        document.getElementById("tip-value").textContent = tip;
-        document.getElementById("cost-display").textContent = bill;
+        document.getElementById("tip-value").textContent = `$${tip}`;
+        document.getElementById("cost-display").textContent = `$${bill}`;
     }
 }
 //sets slider to original position and clears textbox

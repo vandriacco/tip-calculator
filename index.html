@@ -19,14 +19,14 @@
         <form>
             <label for="price">What was the total?</label>
             <input type="text" name="price" id="input-cost">
+            <button onclick="resetCalculator()">Clear</button>
         </form>
         <div>
-            <button onclick="calculateTip()">Calculate</button>
-            <button onclick="resetCalculator()">Clear</button>
+            <!-- <button onclick="calculateTip()">Calculate</button> -->
         </div>
         <div>
             <label for="tip-field">How much would you like to tip?</label>
-            <input type="range"  type="range" min="0" max="50" value="20" class="slider" name='tip-field' id='tip'>
+            <input type="range"  type="range" min="0" max="100" value="20" class="slider" name='tip-field' id='tip'>
             <label for="tip-field"><span id="tip-display"></span>%</label>
         </div>
         <div>
