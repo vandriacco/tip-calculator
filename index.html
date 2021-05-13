@@ -10,12 +10,13 @@
         <title>Tip Calculator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./mystyles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>Tip Calculator</h1>
         <form>
             <label for="price">What was the total?</label>
             <input type="text" name="price" id="input-cost">
@@ -29,7 +30,7 @@
             <input type="range"  type="range" min="0" max="100" value="20" class="slider" name='tip-field' id='tip'>
             <label for="tip-field"><span id="tip-display"></span>%</label>
         </div>
-        <div>
+        <div id="result">
             <div >tip value: <span id='tip-value'></span></div>
             <div>total cost: <span id='cost-display'></span></div>
         </div>

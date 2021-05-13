@@ -1,5 +1,5 @@
-var slider = document.getElementById("tip");
-var output = document.getElementById("tip-display");
+let slider = document.getElementById("tip");
+let output = document.getElementById("tip-display");
 output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
@@ -33,7 +33,7 @@ function calculateTip() {
 function resetCalculator() {
     document.getElementById("tip").value = 20
     updateTextInput(20)
-    document.getElementById("input-cost").value = ""
+    document.getElementById("input-cost").value = "";
     document.getElementById("tip-value").textContent = "";
     document.getElementById("cost-display").textContent = "";
 }
