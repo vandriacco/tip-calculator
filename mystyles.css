@@ -1,15 +1,14 @@
-
-h1{
-
-}
 body{
     text-align: center;
-    background: url(images\Spiral.jpg);
+    align-items: center;
+    font-family: sans-serif;
 }
 #result{
     background-color: black;
+    width: 9em;
+    background-position: center;
     color: white;
-    margin: auto;
+    margin: 1.5em;
     border-radius: 5%;
     font-size: larger;
 }
